@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.flightbook"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/flight2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.flightbook.Start"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+      <activity
+            android:name="com.example.flightbook.Form1"
+            android:label="@string/flights" >
+            <intent-filter>
+                <action android:name="com.example.flightbook.FORM1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.flightbook.Form2"
+            android:label="@string/passenger" >
+            <intent-filter>
+                <action android:name="com.example.flightbook.FORM2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.flightbook.Payment"
+            android:label="@string/payment" >
+            <intent-filter>
+                <action android:name="com.example.flightbook.PAYMENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.flightbook.Pay"
+            android:label="@string/payment" >
+            <intent-filter>
+                <action android:name="com.example.flightbook.PAY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.flightbook.BankAccount"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.flightbook.BANKACCOUNT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.flightbook.About"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.example.flightbook.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.flightbook.Comment"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="com.example.flightbook.COMMENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity
+            android:name="com.example.flightbook.Faqs"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="com.example.flightbook.FAQS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.flightbook.Bank"
+            android:label="@string/bank"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.example.flightbook.PAYMENTCONFIRM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.flightbook.MainActivity"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="com.example.flightbook.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+    </application>
+
+</manifest>
